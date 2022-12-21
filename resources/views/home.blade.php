@@ -7,7 +7,15 @@
   <title>Home</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h1>{{$saluto}} {{$mondo}}</h1>
+
+  <!-- esempio condizione -->
+  @if ($stampa_paragrafo)
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cumque minima maxime rem? Aliquam quo aut aspernatur aperiam quae quos molestiae quas! Sapiente esse eum quis, nihil consectetur ipsum necessitatibus repellendus, sit maxime voluptates nam ullam vitae laborum quod dignissimos repellat illo facilis, dicta illum doloremque! Culpa aspernatur consequuntur recusandae autem, labore saepe ducimus temporibus. Tempore dicta laudantium sit iste illo dolores exercitationem voluptate similique, expedita veniam non eius asperiores ad modi quas in deserunt ipsum voluptatum nihil! Quisquam impedit dolore voluptatum assumenda illum labore facilis similique perferendis quas officiis accusamus corrupti, accusantium est praesentium ipsa tenetur odio quis tempora.</p>
+  
+  @else
+    <p>nessun paragrafo da stampare</p>
+  @endif
   
 </body>
 </html>

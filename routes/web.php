@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $saluto = 'Hello';
+    $mondo = 'World!';
+
+    $stampa_paragrafo = true;
+
+    return view('home', compact('saluto', 'mondo', 'stampa_paragrafo'));
 });
