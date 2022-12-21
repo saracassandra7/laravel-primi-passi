@@ -18,6 +18,7 @@ Route::get('/', function () {
     $mondo = 'World!';
 
     $stampa_paragrafo = true;
+    $lista = ['Culpa aspernatur', 'Recusandae autem', 'Labore saepe ducimus temporibus', 'Tempore dicta laudantium', 'Exercitationem voluptate similique', 'Expedita veniam'];
 
-    return view('home', compact('saluto', 'mondo', 'stampa_paragrafo'));
+    return view('home', compact('saluto', 'mondo', 'stampa_paragrafo', 'lista'));
 });

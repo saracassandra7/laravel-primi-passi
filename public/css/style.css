@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkblue;
+  background-color: rgb(206, 238, 248);
+}
+
+.container{
+  width: 80%;
+  max-width: 1170px;
+  margin: 20px auto;
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+p{
+  margin: 30px 0;
+}
+
+li.first{
+  text-decoration: underline;
+  color: green;
+}
+
+li.last{
+  text-decoration: underline;
+  color: red;
+}
