@@ -22,3 +22,37 @@ Route::get('/', function () {
 
     return view('home', compact('saluto', 'mondo', 'stampa_paragrafo', 'lista'));
 });
+
+Route::get('/christmas-songs', function () {
+
+    $playlist = [
+        [
+            'title' => 'All I Want for Christmas Is You' ,
+            'singer' => 'Mariah Carey',
+            'year' => 1994,
+        ],
+        [
+            'title' => 'Jingle Bell Rock' ,
+            'singer' => 'Billy Idol',
+            'year' => 2006,
+        ],
+        [
+            'title' => 'Feliz Navidad' ,
+            'singer' => 'Jose Feliciano',
+            'year' => 1970,
+        ],
+        [
+            'title' => 'Last Christmas' ,
+            'singer' => 'Wham!',
+            'year' => 1984,
+        ],
+        [
+            'title' => 'O Holy Night' ,
+            'singer' => 'Celine Dion',
+            'year' => 1998,
+        ],
+    ];
+    
+    return view('songs', compact('playlist'));
+
+});

@@ -20,16 +20,27 @@ body{
   padding: 20px;
 }
 
-p{
+p, ul{
   margin: 30px 0;
 }
 
 li.first{
-  text-decoration: underline;
+  text-decoration: line-through;
   color: green;
 }
 
 li.last{
-  text-decoration: underline;
+  text-decoration: line-through;
   color: red;
+}
+
+h2{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.box-song{
+  margin: 20px auto;
+  color: brown;
+  text-align: center;
 }
